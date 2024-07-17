@@ -71,12 +71,7 @@ function Login() {
               placeholder="Enter your password"
               type="password"
               {...register("password", {
-                required: true,
-                // validate: {
-                //   matchPatern: (value) =>
-                //     /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/.test(value) ||
-                //     "Password must be strong",
-                // },
+                required: true
               })}
             />
             <Button type="submit" className="w-full">Sign in</Button>
